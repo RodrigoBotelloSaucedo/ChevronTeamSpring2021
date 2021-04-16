@@ -17,7 +17,7 @@ def epoch_time(series):
             break
     return epoch_values
 	
-def standard_date_types(series): 
+git def standard_date_types(series): 
     standard_times = []
     pump_data_dropped = series.dropna().reset_index().drop(columns = 'index').to_numpy()
     for i in range(len(pump_data_dropped)):
